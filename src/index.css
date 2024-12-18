@@ -1,0 +1,102 @@
+/* index.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(to right, #ffffff, #a5aab3); /* Gradient from purple to blue */
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(121, 116, 116); /* White text for better contrast on gradient */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button:focus {
+  outline: none;
+}
+
+h2 {
+  text-align: center;
+  color: white; /* White text for better contrast */
+}
+
+.canvas-container {
+  width: 100%;
+  max-width: 700px;  /* Reduced max width of the chart */
+  height: 300px;     /* Reduced height of the chart */
+  margin: 20px auto;
+}
+
+canvas {
+  width: 100% !important;  /* Ensure the canvas fills the container */
+  height: 100% !important; /* Ensure the canvas fills the container */
+}
+
+.expense-item {
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expense-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+.expense-date,
+.expense-description,
+.expense-type {
+  flex: 1;
+}
+
+.expense-actions {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:focus {
+  outline: none;
+}
